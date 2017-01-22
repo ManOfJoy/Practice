@@ -1,0 +1,5 @@
+Java Script to replace New Line with space.
+example:-
+var words = "a\nb\nc\nd\ne\nf";
+words = words.replace(/\n/g, " ");
+alert(words);
