@@ -1,0 +1,3 @@
+In order to increase the command line buffer size.  Windows command line.
+Go to CMD Properties.
+In Command History, type or select 999 in Buffer Size, and then type or select 5 in Number of Buffers.
