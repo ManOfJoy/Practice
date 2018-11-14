@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    
+   
+
+    public static void main(String[] args) throws IOException{
+        Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        Set<Integer> set1 = new HashSet<Integer>();
+        Set<Integer> set2 = new HashSet<Integer>();
+
+        for (int i = 0; i < size; i++) {
+            set1.add(i);
+            set2.add(i);
+        }
+
+        int bijectionSize = 1;
+
+        Iterator<Integer> itr = set1.iterator();
+
+        int k = set1.size();
+        while (!set1.isEmpty()) {
+
+            bijectionSize = bijectionSize * set1.size();
+            set1.remove(set1.iterator().next());
+
+        }
+       System.out.println(bijectionSize); 
+    }
+     
+}
